@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 djangorestframework = "*"
 mysqlclient = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

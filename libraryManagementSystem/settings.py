@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "debug_toolbar",
     'rest_framework',
+    'djoser',
+    'debug_toolbar',
     'django_filters',
     'book',
 ]
@@ -80,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lms_db',
         'USER': 'root',
-        'PASSWORD': '**********',
+        'PASSWORD': '',
         'HOST': 'localhost',
     }
 }

@@ -1,14 +1,19 @@
 from django_filters import FilterSet
 
-
-class AuthorFilter:
-    pass
+from book.models import Author, Book
 
 
 class AuthorFilter(FilterSet):
-    pass
+    class Meta:
+        model = Author
+        fields = {
+            'first_name': ['exact']
+        }
 
 
-class Meta:
-    model = AuthorFilter
-    fields = ['first_name', 'last_name']
+class BookFilter(FilterSet):
+    model = Book
+    fields = {
+        'title' : ['exact'],
+        'price' : ['gt', 'lt']
+    }
